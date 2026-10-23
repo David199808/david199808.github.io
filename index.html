@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+  <!----HEAD----->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <title>Juan David Gomez</title>
+  </head>
+  <!----BODY----->
+  <body>
+    <!-----HEADER----->
+    <header class="header">
+      <a href="#inicio" class="menu__logo">Juan David</a>
+      <input type="checkbox" id="menu-hamburguesa" class="menu__hamburguesa" />
+      <label for="menu-hamburguesa" class="menu__icono">☰</label>
+      <!-----MENU NAV----->
+      <nav class="menu">
+        <a href="#inicio" class="menu__link">Inicio</a>
+        <a href="#sobre-mi" class="menu__link">Sobre mí</a>
+        <a href="#proyectos" class="menu__link">Proyectos</a>
+        <a href="#habilidades" class="menu__link">Habilidades</a>
+        <a href="#contacto" class="menu__link">Contacto</a>
+      </nav>
+    </header>
+    <!-----CONTENIDO PRINCIPAL----->
+    <main>
+      <!-----INICIO----->
+      <section id="inicio" class="inicio">
+        <h1 class="inicio__titulo">Hola, soy Juan David Gómez Aldana</h1>
+        <p class="inicio__descripcion">Desarrollador frontend en formación</p>
+        <a href="#proyectos" class="inicio__link">Ver mis proyectos</a>
+      </section>
+      <!-----SOBRE MI----->
+      <div class="borde"></div>
+      <section id="sobre-mi" class="sobre-mi">
+        <article class="sobre-mi__item">
+          <img
+            src="yo.jpeg"
+            class="sobre-mi__imagen"
+            alt="foto de juan david"
+          />
+          <div class="sobre-mi__texto">
+            <h2 class="sobre-mi__titulo">Sobre mí</h2>
+            <p class="sobre-mi__descripcion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, qui
+              libero! Ab beatae optio iure molestiae, rem et harum, dolorem
+              tempora natus itaque nihil. Voluptates, dignissimos minima. Error,
+              itaque ipsum.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <!-----PROYECTOS----->
+      <div class="borde-piedra"></div>
+      <section id="proyectos" class="proyectos">
+        <h2 class="proyectos__subtitulo">Proyectos</h2>
+        <!-----DAVRAWEAR----->
+        <div class="proyectos__lista">
+          <article class="proyectos__item">
+            <img
+              src="davrawear.png"
+              class="proyectos__imagen"
+              alt="Pagina de inicio de Davrawear"
+            />
+            <h3 class="proyectos__nombre">Davrawear</h3>
+            <p class="proyectos__descripcion">descripcion</p>
+            <div class="proyectos__links">
+              <a
+                href="https://david199808.github.io/DAVRA/"
+                class="proyectos__link"
+                target="_blank"
+                >Ver página</a
+              >
+              <a
+                href="https://github.com/David199808/DAVRA"
+                class="proyectos__link"
+                target="_blank"
+                >Ver código</a
+              >
+            </div>
+          </article>
+          <!----LA TERRAZA----->
+          <article class="proyectos__item">
+            <img
+              src="laterraza.png"
+              class="proyectos__imagen"
+              alt="Pagina de inicio de La Terraza"
+            />
+            <h3 class="proyectos__nombre">La Terraza</h3>
+            <p class="proyectos__descripcion">descripcion</p>
+            <div class="proyectos__links">
+              <a
+                href="https://david199808.github.io/La-Terraza-Grill-House/rutas-menu/carta.html"
+                class="proyectos__link"
+                target="_blank"
+                >Ver página</a
+              >
+              <a
+                href="https://github.com/David199808/La-Terraza-Grill-House"
+                class="proyectos__link"
+                target="_blank"
+                >Ver código</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+      <!----HABILIDADES----->
+      <section id="habilidades" class="habilidades">
+        <h2 class="habilidades__titulo">Habilidades</h2>
+        <p>HTML - CSS - JAVASCRIPT</p>
+      </section>
+      <!----CONTACTO----->
+      <section id="contacto" class="contacto">
+        <h2 class="contacto__nombre">Contacto</h2>
+        <p class="contacto__correo">Correo: davidgomezadana@gmail.com</p>
+        <a href="#" class="contacto__link">GitHub</a>
+      </section>
+    </main>
+    <!----FOOTER----->
+    <footer>
+      <p>&copy;2026 Juan David Gómez Aldana</p>
+    </footer>
+  </body>
+</html>
