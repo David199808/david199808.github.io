@@ -14,8 +14,6 @@
   --fuente-titulos: "Press Start 2P", monospace;
   --fuente-texto: "VT323", monospace;
 
-  --borde: 4px solid var(--oscuro);
-
   /*---Colores para seccion de proyectos/contacto/footer---*/
 
   --piedra-diorita: #e8e6e1;
@@ -34,6 +32,12 @@
   --esmeralda: #17c964;
   --diamante: #4be3c5;
   --lava: #ff7b1c;
+
+  /*-----Colores contacto-----*/
+  --lava-oscura: #8b1a00;
+  --lava: #e63c00;
+  --lava-naranja: #ff7b1c;
+  --lava-brillo: #ffc23d;
 }
 
 html {
@@ -47,8 +51,9 @@ body {
   font-family: var(--fuente-texto);
   background-color: var(--cielo);
   color: var(--oscuro);
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   line-height: 1.3;
+  text-align: justify;
 }
 
 /*-----HEADER-----*/
@@ -134,7 +139,7 @@ body {
 
 .inicio__descripcion {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 0;
 }
 
@@ -239,34 +244,150 @@ body {
 .proyectos__item {
   padding: 20px;
   display: grid;
-  border: 8px solid var(--cueva);
+  border: 8px solid var(--piedra-oscura);
   background-color: var(--piedra-diorita);
-  border-bottom: 20px solid var(--cueva);
+  border-bottom: 20px solid var(--piedra-oscura);
 }
 
 .proyectos__imagen {
   margin: auto;
   max-width: 100%;
   width: 300px;
-  border: 5px solid var(--cueva);
-  /*box-shadow: 0px 0px 10px var(--cueva);*/
-  border-bottom: 20px solid var(--cueva);
+  /*border: 5px solid var(--piedra-oscura);*/
+  /**border-bottom: 20px solid var(--piedra-oscura);*/
+  box-shadow: 0px 15px 10px var(--cueva);
 }
 
 .proyectos__nombre {
   text-align: center;
   font-size: 2rem;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .proyectos__descripcion {
   margin: 0 auto;
+  font-size:;
 }
 
 .proyectos__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+.proyectos__link--pagina {
+  text-decoration: none;
+  background-color: var(--piedra-oscura);
+  color: var(--piedra-diorita);
+  padding: 0 10px;
+  border: 1.5px solid var(--carbon);
+  border-bottom: 5px solid var(--carbon);
+}
+
+.proyectos__link--codigo {
+  text-decoration: none;
+  background-color: var(--piedra-oscura);
+  color: var(--piedra-diorita);
+  padding: 0 10px;
+  border: 1.5px solid var(--carbon);
+  border-bottom: 5px solid var(--carbon);
+}
+
+/*-----PROYECTOS END----->
+
+/*-----HABILIDADES-----*/
+
+.habilidades {
+  margin: auto;
+  max-width: 900px;
+  background-color: var(--cueva);
+  color: var(--piedra-clara);
+  border-top: 20px solid var(--carbon);
+  padding: 20px;
+}
+
+.habilidades__titulo {
+  font-size: 2.5rem;
+  margin: 0;
+  text-align: center;
+}
+
+.habilidades__lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 2rem;
+  gap: 20px;
+  padding: 0;
+}
+.habilidades__html {
+  list-style: none;
+  color: var(--hierro);
+}
+
+.habilidades__css {
+  list-style: none;
+  color: var(--oro);
+}
+
+.habilidades__javascript {
+  list-style: none;
+  color: var(--diamante);
+}
+
+.habilidades__git,
+.habilidades__github {
+  list-style: none;
+  color: var(--esmeralda);
+}
+
+.habilidades__icono {
+  width: 24px;
+  height: 24px;
+}
+
+/*-----HABILIDADES END-----*/
+
+/*-----CONTACTO----*/
+
+.borde-lava {
+  border-top: 10px solid var(--lava-brillo);
+  background-color: var(--lava-naranja);
+  padding: 15px 20px;
+  max-width: 900px;
   margin: auto;
 }
-.proyectos__link {
+
+.contacto {
+  max-width: 900px;
+  display: grid;
+  padding: 20px;
+  margin: auto;
+  background-color: var(--lava-oscura);
+  color: var(---blanco);
+  font-size: 1.5rem;
+}
+
+.contacto__nombre {
+  margin: 0 auto;
+}
+
+.contacto__link {
+  color: var(---blanco);
   text-decoration: none;
+}
+/*-----CONTACTO-----*/
+
+/*-----FOOTER-----*/
+
+footer {
+  box-sizing: border-box;
+  max-width: 940px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1px;
+  background-color: var(--roca-madre);
+  color: var(--lava-oscura);
 }

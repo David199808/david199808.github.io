@@ -17,7 +17,10 @@
   <body>
     <!-----HEADER----->
     <header class="header">
-      <a href="#inicio" class="menu__logo">Juan David</a>
+      <a href="#inicio" class="menu__logo"
+        >Juan David
+        <img src="pico.svg" class="habilidades__icono" alt="icono pico"
+      /></a>
       <input type="checkbox" id="menu-hamburguesa" class="menu__hamburguesa" />
       <label for="menu-hamburguesa" class="menu__icono">☰</label>
       <!-----MENU NAV----->
@@ -33,7 +36,7 @@
     <main>
       <!-----INICIO----->
       <section id="inicio" class="inicio">
-        <h1 class="inicio__titulo">Hola, soy Juan David Gómez Aldana</h1>
+        <h1 class="inicio__titulo">Hola, soy Juan David</h1>
         <p class="inicio__descripcion">Desarrollador frontend en formación</p>
         <a href="#proyectos" class="inicio__link">Ver mis proyectos</a>
       </section>
@@ -49,10 +52,12 @@
           <div class="sobre-mi__texto">
             <h2 class="sobre-mi__titulo">Sobre mí</h2>
             <p class="sobre-mi__descripcion">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, qui
-              libero! Ab beatae optio iure molestiae, rem et harum, dolorem
-              tempora natus itaque nihil. Voluptates, dignissimos minima. Error,
-              itaque ipsum.
+              Soy Juan David Gómez Aldana, de Colombia, y estoy aprendiendo
+              desarrollo web con una meta clara: convertirme en desarrollador
+              full stack. Lo que más disfruto es ver como una idea se convierte
+              en una página o aplicación real, con sus colores formas y diseño.
+              Hoy construyo sitios con HTML, CSS y sigo avanzando en JavasCript
+              hacia Angular, Java y la nube.
             </p>
           </div>
         </article>
@@ -71,17 +76,36 @@
               alt="Pagina de inicio de Davrawear"
             />
             <h3 class="proyectos__nombre">Davrawear</h3>
-            <p class="proyectos__descripcion">descripcion</p>
+            <p class="proyectos__descripcion">
+              Tienda de ropa e-commerce responsive. Construida con HTML y CSS,
+              mi mayor reto: resolver scroll horizontal en celulares.
+            </p>
+            <ul class="habilidades__lista">
+              <li class="habilidades__html">
+                <img
+                  src="hierro.svg"
+                  class="habilidades__icono"
+                  alt="icono hierro"
+                />HTML
+              </li>
+              <li class="habilidades__css">
+                <img
+                  src="oro.svg"
+                  class="habilidades__icono"
+                  alt="icono oro"
+                />CSS
+              </li>
+            </ul>
             <div class="proyectos__links">
               <a
                 href="https://david199808.github.io/DAVRA/"
-                class="proyectos__link"
+                class="proyectos__link--pagina"
                 target="_blank"
                 >Ver página</a
               >
               <a
                 href="https://github.com/David199808/DAVRA"
-                class="proyectos__link"
+                class="proyectos__link--codigo"
                 target="_blank"
                 >Ver código</a
               >
@@ -95,17 +119,36 @@
               alt="Pagina de inicio de La Terraza"
             />
             <h3 class="proyectos__nombre">La Terraza</h3>
-            <p class="proyectos__descripcion">descripcion</p>
+            <p class="proyectos__descripcion">
+              Sitio web para un restaurante: carta, reservas, ubicación con mapa
+              y diseño adaptable. Mayor reto especificidad CSS
+            </p>
+            <ul class="habilidades__lista">
+              <li class="habilidades__html">
+                <img
+                  src="hierro.svg"
+                  class="habilidades__icono"
+                  alt="icono hierro"
+                />HTML
+              </li>
+              <li class="habilidades__css">
+                <img
+                  src="oro.svg"
+                  class="habilidades__icono"
+                  alt="icono oro"
+                />CSS
+              </li>
+            </ul>
             <div class="proyectos__links">
               <a
                 href="https://david199808.github.io/La-Terraza-Grill-House/rutas-menu/carta.html"
-                class="proyectos__link"
+                class="proyectos__link proyectos__link--pagina"
                 target="_blank"
                 >Ver página</a
               >
               <a
                 href="https://github.com/David199808/La-Terraza-Grill-House"
-                class="proyectos__link"
+                class="proyectos__link proyectos__link--codigo"
                 target="_blank"
                 >Ver código</a
               >
@@ -116,13 +159,51 @@
       <!----HABILIDADES----->
       <section id="habilidades" class="habilidades">
         <h2 class="habilidades__titulo">Habilidades</h2>
-        <p>HTML - CSS - JAVASCRIPT</p>
+        <ul class="habilidades__lista">
+          <li class="habilidades__html">
+            <img
+              src="hierro.svg"
+              class="habilidades__icono"
+              alt="icono hierro"
+            />HTML
+          </li>
+          <li class="habilidades__css">
+            <img src="oro.svg" class="habilidades__icono" alt="icono oro" />CSS
+          </li>
+          <li class="habilidades__git">
+            <img
+              src="esmeralda.svg"
+              class="habilidades__icono"
+              alt="icono esmeralda"
+            />Git
+          </li>
+          <li class="habilidades__github">
+            <img
+              src="esmeralda.svg"
+              class="habilidades__icono"
+              alt="icono esmeralda"
+            />GitHub
+          </li>
+          <li class="habilidades__javascript">
+            <img
+              src="diamante.svg"
+              class="habilidades__icono"
+              alt="icono diamante"
+            />JavasCript
+          </li>
+        </ul>
       </section>
       <!----CONTACTO----->
+      <div class="borde-lava"></div>
       <section id="contacto" class="contacto">
         <h2 class="contacto__nombre">Contacto</h2>
-        <p class="contacto__correo">Correo: davidgomezadana@gmail.com</p>
-        <a href="#" class="contacto__link">GitHub</a>
+        <a class="contacto__correo">Correo: davidgomezadana@gmail.com</>
+        <a
+          href="https://github.com/David199808"
+          class="contacto__link"
+          target="_blank"
+          >GitHub</a
+        >
       </section>
     </main>
     <!----FOOTER----->
