@@ -9,7 +9,7 @@
   --madera: #c8a173;
   --arena: #e8d3b0;
   --oscuro: #3a2a1a;
-  ---blanco: #ffffff;
+  --blanco: #ffffff;
 
   --fuente-titulos: "Press Start 2P", monospace;
   --fuente-texto: "VT323", monospace;
@@ -31,13 +31,18 @@
   --oro: #f5c542;
   --esmeralda: #17c964;
   --diamante: #4be3c5;
-  --lava: #ff7b1c;
 
   /*-----Colores contacto-----*/
   --lava-oscura: #8b1a00;
   --lava: #e63c00;
   --lava-naranja: #ff7b1c;
   --lava-brillo: #ffc23d;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 html {
@@ -53,12 +58,18 @@ body {
   color: var(--oscuro);
   font-size: 1.5rem;
   line-height: 1.3;
-  text-align: justify;
+  text-align: left;
+}
+
+section {
+  scroll-margin-top: 70px;
 }
 
 /*-----HEADER-----*/
 
 .header {
+  max-width: 1200px;
+  margin: auto;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -68,16 +79,20 @@ body {
   align-items: center;
   padding: 12px 16px;
   background-color: var(--oscuro);
-  color: var(---blanco);
+  color: var(--blanco);
 }
 
 .menu__logo {
   font-family: var(--fuente-titulos);
   font-size: 0.7rem;
   text-decoration: none;
-  color: var(---blanco);
+  color: var(--blanco);
 }
 
+.menu__logo-icono {
+  width: 30px;
+  height: 30px;
+}
 .menu__hamburguesa {
   display: none;
 }
@@ -103,7 +118,7 @@ body {
   font-family: var(--fuente-titulos);
   font-size: 0.6rem;
   text-transform: uppercase;
-  color: var(---blanco);
+  color: var(--blanco);
   text-decoration: none;
 }
 
@@ -144,13 +159,14 @@ body {
 }
 
 .inicio__link {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   text-align: center;
   margin: auto;
   margin-top: 15px;
   background-color: var(--pasto);
   text-decoration: none;
-  color: var(---blanco);
+  color: var(--blanco);
   font-size: 2rem;
   border: 4px solid var(--hoja-oscura);
   border-bottom: 13px solid var(--hoja-oscura);
@@ -160,7 +176,7 @@ body {
 /*----SOBRE MI-----*/
 
 .borde {
-  max-width: 910px;
+  max-width: 1200px;
   margin: auto;
   padding: 15px;
   border-top: 10px solid var(--pasto-claro);
@@ -168,7 +184,7 @@ body {
 }
 
 .sobre-mi {
-  max-width: 900px;
+  max-width: 1200px;
   margin: auto;
   background-color: var(--tierra);
   padding: 20px;
@@ -177,7 +193,7 @@ body {
 .sobre-mi__item {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20;
+  gap: 20px;
   align-items: center;
   background-color: var(--madera);
   border: 5px solid var(--oscuro);
@@ -214,7 +230,7 @@ body {
 /*----PROYECTOS----*/
 
 .borde-piedra {
-  max-width: 910px;
+  max-width: 1200px;
   margin: auto;
   padding: 15px;
   border-top: 10px solid var(--piedra-clara);
@@ -222,7 +238,7 @@ body {
 }
 
 .proyectos {
-  max-width: 900px;
+  max-width: 1200px;
   padding: 20px;
   background-color: var(--piedra);
   color: var(--cueva);
@@ -237,6 +253,7 @@ body {
 
 .proyectos__subtitulo {
   margin: 0;
+  margin-bottom: 15px;
   text-align: center;
   font-size: 2.5rem;
 }
@@ -267,7 +284,6 @@ body {
 
 .proyectos__descripcion {
   margin: 0 auto;
-  font-size:;
 }
 
 .proyectos__links {
@@ -295,13 +311,13 @@ body {
   border-bottom: 5px solid var(--carbon);
 }
 
-/*-----PROYECTOS END----->
+/*-----PROYECTOS END-----*/
 
 /*-----HABILIDADES-----*/
 
 .habilidades {
   margin: auto;
-  max-width: 900px;
+  max-width: 1200px;
   background-color: var(--cueva);
   color: var(--piedra-clara);
   border-top: 20px solid var(--carbon);
@@ -353,29 +369,34 @@ body {
 /*-----CONTACTO----*/
 
 .borde-lava {
+  max-width: 1200px;
   border-top: 10px solid var(--lava-brillo);
   background-color: var(--lava-naranja);
   padding: 15px 20px;
-  max-width: 900px;
   margin: auto;
 }
 
 .contacto {
-  max-width: 900px;
+  max-width: 1200px;
   display: grid;
   padding: 20px;
   margin: auto;
   background-color: var(--lava-oscura);
-  color: var(---blanco);
+  color: var(--blanco);
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .contacto__nombre {
   margin: 0 auto;
 }
 
+.contacto__correo {
+  text-decoration: none;
+  color: var(--blanco);
+}
 .contacto__link {
-  color: var(---blanco);
+  color: var(--blanco);
   text-decoration: none;
 }
 /*-----CONTACTO-----*/
@@ -383,11 +404,11 @@ body {
 /*-----FOOTER-----*/
 
 footer {
+  max-width: 1200px;
   box-sizing: border-box;
-  max-width: 940px;
   text-align: center;
   margin: 0 auto;
   padding: 1px;
   background-color: var(--roca-madre);
-  color: var(--lava-oscura);
+  color: var(--lava-brillo);
 }
