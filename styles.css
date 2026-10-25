@@ -181,6 +181,7 @@ section {
   padding: 15px;
   border-top: 10px solid var(--pasto-claro);
   background-color: var(--pasto);
+  position: relative;
 }
 
 .sobre-mi {
