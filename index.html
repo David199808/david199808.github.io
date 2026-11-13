@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Juan David Gomez</title>
   </head>
   <!----BODY----->
@@ -18,7 +18,8 @@
     <!-----HEADER----->
     <header class="header">
       <a href="#inicio" class="menu__logo"
-        >Juan David <img src="pico.svg" class="menu__logo-icono" alt=""
+        >Juan David
+        <img src="./img/iconos/pico.svg" class="menu__logo-icono" alt=""
       /></a>
       <input type="checkbox" id="menu-hamburguesa" class="menu__hamburguesa" />
       <label for="menu-hamburguesa" class="menu__icono">☰</label>
@@ -44,7 +45,7 @@
       <section id="sobre-mi" class="sobre-mi">
         <article class="sobre-mi__item">
           <img
-            src="yo.jpeg"
+            src="./img/capturas/yo.jpeg"
             class="sobre-mi__imagen"
             alt="foto de juan david"
           />
@@ -70,26 +71,42 @@
         <div class="proyectos__lista">
           <article class="proyectos__item">
             <img
-              src="davrawear.png"
+              src="./img/capturas/davrawear.png"
               class="proyectos__imagen"
               alt="Pagina de inicio de Davrawear"
             />
             <h3 class="proyectos__nombre">Davrawear</h3>
             <p class="proyectos__descripcion">
-              Tienda de ropa e-commerce responsive. Construida con HTML y CSS,
-              mi mayor reto: resolver scroll horizontal en celulares.
+              Tienda de ropa e-commerce responsive. Construida con HTML, CSS y
+              TypeScript, mi mayor reto: resolver scroll horizontal en
+              celulares.
             </p>
             <ul class="habilidades__lista">
               <li class="habilidades__html">
-                <img src="hierro.svg" class="habilidades__icono" alt="" />HTML
+                <img
+                  src="./img/iconos/hierro.svg"
+                  class="habilidades__icono"
+                  alt=""
+                />HTML
               </li>
               <li class="habilidades__css">
-                <img src="oro.svg" class="habilidades__icono" alt="" />CSS
+                <img
+                  src="./img/iconos/oro.svg"
+                  class="habilidades__icono"
+                  alt=""
+                />CSS
+              </li>
+              <li class="habilidades__typescript">
+                <img
+                  src="./img/iconos/gema-typescript.svg"
+                  class="habilidades__icono"
+                  alt=""
+                />TypeScript
               </li>
             </ul>
             <div class="proyectos__links">
               <a
-                href="https://david199808.github.io/DAVRA/"
+                href="https://davra-wear.netlify.app"
                 class="proyectos__link proyectos__link--pagina"
                 target="_blank"
                 >Ver página</a
@@ -105,32 +122,48 @@
           <!----LA TERRAZA----->
           <article class="proyectos__item">
             <img
-              src="laterraza.png"
+              src="./img/capturas/la-terraza.png"
               class="proyectos__imagen"
               alt="Pagina de inicio de La Terraza"
             />
             <h3 class="proyectos__nombre">La Terraza</h3>
             <p class="proyectos__descripcion">
-              Sitio web para un restaurante: carta, reservas, ubicación con mapa
-              y diseño adaptable. Mi mayor reto: la especificidad CSS.
+              Sitio web para un restaurante: menu, reservas, ubicación, pedido
+              por whatsapp y diseño adaptable. Mi mayor reto: la especificidad
+              CSS.
             </p>
             <ul class="habilidades__lista">
               <li class="habilidades__html">
-                <img src="hierro.svg" class="habilidades__icono" alt="" />HTML
+                <img
+                  src="./img/iconos/hierro.svg"
+                  class="habilidades__icono"
+                  alt=""
+                />HTML
               </li>
               <li class="habilidades__css">
-                <img src="oro.svg" class="habilidades__icono" alt="" />CSS
+                <img
+                  src="./img/iconos/oro.svg"
+                  class="habilidades__icono"
+                  alt=""
+                />CSS
+              </li>
+              <li class="habilidades__typescript">
+                <img
+                  src="./img/iconos/gema-typescript.svg"
+                  class="habilidades__icono"
+                  alt=""
+                />TypeScript
               </li>
             </ul>
             <div class="proyectos__links">
               <a
-                href="https://david199808.github.io/La-Terraza-Grill-House/"
+                href="https://david199808.github.io/LA-TERRAZA/"
                 class="proyectos__link proyectos__link--pagina"
                 target="_blank"
                 >Ver página</a
               >
               <a
-                href="https://github.com/David199808/La-Terraza-Grill-House"
+                href="https://github.com/David199808/LA-TERRAZA"
                 class="proyectos__link proyectos__link--codigo"
                 target="_blank"
                 >Ver código</a
@@ -144,23 +177,46 @@
         <h2 class="habilidades__titulo">Habilidades</h2>
         <ul class="habilidades__lista">
           <li class="habilidades__html">
-            <img src="hierro.svg" class="habilidades__icono" alt="" />HTML
+            <img
+              src="./img/iconos/hierro.svg"
+              class="habilidades__icono"
+              alt=""
+            />HTML
           </li>
           <li class="habilidades__css">
-            <img src="oro.svg" class="habilidades__icono" alt="" />CSS
+            <img
+              src="./img/iconos/oro.svg"
+              class="habilidades__icono"
+              alt=""
+            />CSS
           </li>
           <li class="habilidades__git">
-            <img src="esmeralda.svg" class="habilidades__icono" alt="" />Git
+            <img
+              src="./img/iconos/esmeralda.svg"
+              class="habilidades__icono"
+              alt=""
+            />Git
           </li>
           <li class="habilidades__github">
-            <img src="esmeralda.svg" class="habilidades__icono" alt="" />GitHub
+            <img
+              src="./img/iconos/esmeralda.svg"
+              class="habilidades__icono"
+              alt=""
+            />GitHub
           </li>
           <li class="habilidades__javascript">
             <img
-              src="diamante.svg"
+              src="./img/iconos/diamante.svg"
               class="habilidades__icono"
               alt=""
             />JavaScript
+          </li>
+          <li class="habilidades__typescript">
+            <img
+              src="./img/iconos/gema-typescript.svg"
+              class="habilidades__icono"
+              alt=""
+            />TypeScript
           </li>
         </ul>
       </section>

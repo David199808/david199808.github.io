@@ -31,6 +31,7 @@
   --oro: #f5c542;
   --esmeralda: #17c964;
   --diamante: #4be3c5;
+  --gema: #5f9be0;
 
   /*-----Colores contacto-----*/
   --lava-oscura: #8b1a00;
@@ -63,6 +64,10 @@ body {
 
 section {
   scroll-margin-top: 70px;
+}
+
+img {
+  object-fit: cover;
 }
 
 /*-----HEADER-----*/
@@ -352,6 +357,11 @@ section {
 .habilidades__javascript {
   list-style: none;
   color: var(--diamante);
+}
+
+.habilidades__typescript {
+  list-style: none;
+  color: var(--gema);
 }
 
 .habilidades__git,
